@@ -11,3 +11,7 @@
 % Load test images.
 % Note: Must be double precision in the interval [0,1].
 img1 = imread('images/apple.png');
+img2 = imread('images/orange.png');
+
+imshow(img1);
+imshow(img2);
