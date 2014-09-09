@@ -10,7 +10,4 @@
 
 % Load test images.
 % Note: Must be double precision in the interval [0,1].
-img1 = imread('pyramid.png');
-img2 = imread('chair.png');
-img3 = imread('einstein.jpg');
-
+img1 = imread('images/apple.png');
