@@ -1,0 +1,19 @@
+################################################################################################
+
+    Assignment 3 : FFT Based Iamage Registration
+    
+    Name                : Shantanu Chaudhary
+    Entry Number        : 2010CS50295
+    Date of Submission  : 13/10/14
+
+################################################################################################
+
+                Declaration:
+The code in this repository is solely my work. References have been given where ever they have been
+found to be necessary.
+The submission folder contains the following files:
+> README
+> main.m
+
+References For MATLAB Code:
+> MATLAB Documentation
