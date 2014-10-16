@@ -4,7 +4,7 @@
     
     Name                : Shantanu Chaudhary
     Entry Number        : 2010CS50295
-    Date of Submission  : 13/10/14
+    Date of Submission  : 16/10/14
 
 ################################################################################################
 
@@ -13,8 +13,26 @@ The code in this repository is solely my work. References have been given where 
 found to be necessary.
 The submission folder contains the following files:
 > README
-> main.m
-
+> debug
+> images
+> imp1
+	> debug/
+	> images/
+	> main.m
+	> transformImage.m
+	> image_register.m
+	> highpass_filter.m
+> imp2
+	> images/
+	> main.m
+	> image_register.m
+	> imagepolarcoord.m
+	> phaseCorrelation.m
+	> highpass_filter.m
+	
 References For MATLAB Code:
 > MATLAB Documentation
 > http://read.pudn.com/downloads32/sourcecode/windows/control/104403/fm_gui_v2/hipass_filter.m__.htm
+
+
+EDIT: Need better procedure to verify correctness of angles and translation factors. 
