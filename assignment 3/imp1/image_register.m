@@ -11,19 +11,55 @@
 
 function [] = image_register(img1, img2)
 
+%      img1 = rgb2gray(img1);
+%      img2 = rgb2gray(img2);
+
     % Convert both images to FFT, centering on zero frequency component
-    
     X_Size = size(img1, 1);
     Y_Size = size(img1, 2);
     
+    
+    % Convert both images to FFT, centering on zero frequency component
+    X_Size2 = size(img2, 1);
+    Y_Size2 = size(img2, 2);
+  
+    % Pad image array here 
+     if(Y_Size < Y_Size2)
+         img1 = padarray(img1,[0 (Y_Size2-Y_Size)],'post');
+         X_Size = size(img1,1);
+         Y_Size = size(img1,2);
+    
+     else
+         img2 = padarray(img2,[0 (Y_Size-Y_Size2)],'post');
+         X_Size = size(img2,1);
+         Y_Size = size(img2,2);
+     end
+     
+     if(X_Size < X_Size2)
+         img1 = padarray(img1,[(X_Size2-X_Size) 0],'post');
+         X_Size = size(img1,1);
+         Y_Size = size(img1,2);
+    
+     else
+         img2 = padarray(img2,[(X_Size-X_Size2) 0],'post');
+         X_Size = size(img2,1);
+         Y_Size = size(img2,2);
+     end
+     
     FFT1 = fftshift(fft2(img1));
     FFT2 = fftshift(fft2(img2));
         
-% Convolve the magnitude of the FFT with a high pass filter
     
+%     disp(size(FFT2));
+%     disp(size(FFT1));
+%     disp(X_Size);
+%     error('yo!');
+    
+    % Convolve the magnitude of the FFT with a high pass filter
+    % disp(size());
     IA = hipass_filter(X_Size,Y_Size).*abs(FFT1);  
     IB = hipass_filter(X_Size,Y_Size).*abs(FFT2);  
-        
+    
     % Transform the high passed FFT phase to Log Polar space
     
     L1 = transformImage(IA, X_Size, Y_Size, X_Size, Y_Size, size(IA) / 2 );
@@ -44,11 +80,22 @@ function [] = image_register(img1, img2)
     
     % Find the peak of the phase correlation
 
-    THETA_SORTED = sort(THETA_PHASE(:));  % TODO speed-up, we surely don't need to sort
+    THETA_SORTED = sort(THETA_PHASE(:));  
     
     SI = length(THETA_SORTED):-1:(length(THETA_SORTED));
 
     [THETA_X, THETA_Y] = find(THETA_PHASE == THETA_SORTED(SI));
+    
+%     disp(THETA_X);
+%     disp(THETA_Y);
+    size_of_image = X_Size*Y_Size;
+    
+    % THETA_X to be used for scaling
+    c = 10*(log10(size_of_image)/size_of_image)*10000;
+    
+    Scale = c*((THETA_X - 1)/2);
+    fprintf('Scale is %f\n', Scale);
+    
     
     % Compute angle of rotation
     
@@ -63,8 +110,6 @@ function [] = image_register(img1, img2)
     
     R1 = imrotate(img2, -Theta, 'nearest', 'crop');  
     R2 = imrotate(img2,-(Theta + 180), 'nearest', 'crop');
-    
-    % Output (R1, R2)
     
     % Take FFT of R1
      

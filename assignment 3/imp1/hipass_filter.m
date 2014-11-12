@@ -3,7 +3,6 @@
 
 function H = hipass_filter(ht,wd)
 % hi-pass filter function
-% ...designed for use with Fourier-Mellin stuff
 res_ht = 1 / (ht-1);
 res_wd = 1 / (wd-1);
 
