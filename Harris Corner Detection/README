@@ -1,0 +1,26 @@
+################################################################################################
+
+    Corner Detection in Images
+    
+    Name                : Shantanu Chaudhary
+    Entry Number        : 2010CS50295
+    Date of Submission  : 22/08/14
+
+################################################################################################
+
+                Declaration:
+The code in this repository is solely my work. References have been given where ever they have been
+found to be necessary.
+The submission folder contains the following files:
+> README
+> run.m
+> harris_corner_detect.m
+> findCorner.m
+> Assignment Report.pdf
+> Sample images
+
+References For MATLAB Code:
+> http://www.csse.uwa.edu.au/~pk/research/matlabfns/Spatial/harris.m
+> MATLAB Documentation
+> http://www.mathworks.in/matlabcentral/fileexchange/9272-harris-corner-detector/content/Harris.m
+> http://docs.opencv.org/doc/tutorials/features2d/trackingmotion/harris_detector/harris_detector.html

@@ -1,0 +1,68 @@
+################################################################################################
+
+    Image Pyramid 
+        
+    Name                : Shantanu Chaudhary
+    Entry Number        : 2010CS50295
+    Date of Submission  : 15/09/14
+
+################################################################################################
+
+Declaration:
+The code in this repository is solely my work. References have been given where ever they have been
+deemed to be necessary.
+
+The submission folder directory structure is as follows:
+> README
+> Assignment2_Image_Pyramid_Report.pdf
+> Part1/
+	> main.m 
+	> pyramid.m
+	> img_reduce.m
+	> img_expand.m
+	> images/
+		> apple.jpeg
+		> apple.png
+		> orange.jpeg
+		> orange.png
+
+> Part2/
+	> main.m
+	> img_compress.m
+	> img_expand.m
+	> img_reduce.m
+	> img_sample.m
+	> pyramid.m
+	> images/
+		> s1.png
+		> s2.png
+		> s3.png
+		> s4.png
+	> images/samples/
+			>s1_sample1.png
+			>s1_sample2.png
+			>s1_sample3.png
+			>s1_sample4.png
+			>s1_sample5.png
+			>s2_sample1.png
+			>s2_sample2.png
+			>s2_sample3.png
+			>s2_sample4.png
+			>s2_sample5.png
+			>s3_sample1.png
+			>s3_sample2.png
+			>s3_sample3.png
+			>s3_sample4.png
+			>s3_sample5.png
+			>s4_sample1.png
+			>s4_sample2.png
+			>s4_sample3.png
+			>s4_sample4.png
+			>s4_sample5.png
+			
+References For MATLAB Code:
+> MATLAB Documentation
+> http://www.mathworks.in/help/images/ref/impyramid.html
+> http://docs.opencv.org/trunk/doc/py_tutorials/py_imgproc/py_pyramids/py_pyramids.html
+> http://www.dcs.gla.ac.uk/~samm/pyramidStructures.html
+> http://collaboration.cmc.ec.gc.ca/science/rpn/biblio/ddj/Website/articles/CUJ/1997/9712/perry/perry.htm

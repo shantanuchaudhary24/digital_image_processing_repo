@@ -1,1 +1,13 @@
-This repository contains code for assignments of CSL783: Digital Image Processing
+########################################################################################
+
+	Name 	: Shantanu Chaudhary
+	E-Mail	: shantanuchaudhary24@gmail.com 
+
+
+########################################################################################
+
+This repository contains code for the following digital image processing implementations
+> Harris Corner Detection
+> Image Pyramid (Image Blending & Compression)
+> Image Registration
+> Image Morphing

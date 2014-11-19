@@ -1,0 +1,30 @@
+################################################################################################
+
+    Assignment 4 : Image Morphing
+    
+    Name                : Shantanu Chaudhary
+    Entry Number        : 2010CS50295
+    Date of Submission  : 14/11/14
+
+################################################################################################
+
+                Declaration:
+The code in this repository is solely my work. References have been given where ever they have been
+found to be necessary.
+The submission folder contains the following files:
+> README
+> morphed_images/
+> images/
+> main.m
+> morph.m
+> interpolate_morph.m
+> calculate_rbf_weights.m
+	
+References For MATLAB Code:
+> MATLAB Documentation
+> https://alliance.seas.upenn.edu/~cis581/wiki/Lectures/CIS581-10-10-thinplate.pdf
+> http://stackoverflow.com/questions/24523843/beier-neely-warp-implementation
+> http://www.owlnet.rice.edu/~elec539/Projects97/morphjrks/warpsri.html
+> http://cs.brown.edu/courses/csci1950-g/results/proj5/edwallac/
+
+EDIT: Report for project is missing.
