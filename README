@@ -1,13 +1,40 @@
-########################################################################################
+################################################################################################
 
-	Name 	: Shantanu Chaudhary
-	E-Mail	: shantanuchaudhary24@gmail.com 
+					     README
 
-
-########################################################################################
+################################################################################################
 
 This repository contains code for the following digital image processing implementations
 > Harris Corner Detection
 > Image Pyramid (Image Blending & Compression)
 > Image Registration
 > Image Morphing
+For information regarding the implementations, refer directories of specific implementations
+
+################################################################################################
+
+Collaborators:
+Shantanu Chaudhary (shantanuchaudhary24@gmail.com)
+
+################################################################################################
+
+Folder hierarchy:
+README			: Information about project code
+Harris Corner Detection : Harris Corner Detection implemented in matlab
+Image Pyramid		: Image Pyramid for image blending and compression implemented in matlab
+Image Morphing		: Image morphing/stitching implemented in matlab
+
+################################################################################################
+
+Dependencies:
+-> Matlab
+
+################################################################################################
+
+Setting up project code:
+-> Clone the repository
+-> Import Matlab code from specific implementation you want to run into matlab
+-> Run "main.m" for that implementation
+
+
+################################################################################################
